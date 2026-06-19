@@ -2,10 +2,6 @@ import { getTodayFormttedDate } from '../support/actions/utils'
 
 describe("Login", () => {
 
-  beforeEach(() => {
-    cy.viewport('iphone-xr')
-  })
-
 it("Deve logar com sucesso", () => { // sobre o only e o Skip 
     cy.start();
     cy.submitLoginForm('papito@webdojo.com', 'katana123');

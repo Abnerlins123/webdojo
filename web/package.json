@@ -5,7 +5,13 @@
   "scripts": {
     "dev": "serve -s dist -p 3000",
     "test": "npx cypress run",
-    "test1": "npx cypress open"
+    "test1": "npx cypress open --config viewportWidth=1440,viewportHeight=900",
+    "test:cep": "npx cypress run --spec cypress/e2e/cep.cy.js --config viewportWidth=1440,viewportHeight=900", 
+    "test:haver": "npx cypress run --spec cypress/e2e/haver.cy.js --config viewportWidth=1440,viewportHeight=900",
+    "test:alerts": "npx cypress run --spec cypress/e2e/alerts.cy.js --config viewportWidth=1440,viewportHeight=900",
+    "test:links": "npx cypress run --spec cypress/e2e/links.cy.js --config viewportWidth=414,viewportHeight=896",
+
+    "test:login:mobile": "npx cypress run --spec cypress/e2e/login.cy.js  --config viewportWidth=414,viewportHeight=896"
   },
   "dependencies": {
     "cypress-real-events": "^1.15.0",

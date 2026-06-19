@@ -8,7 +8,7 @@ describe("Simulando Mouseover", () => {
         cy.get('[data-cy="instagram-link"]').realHover()
         cy.contains("papito@webdojo.com").should('exist');
         cy.get('[data-cy="date-value"]').should('exist', 'string')
-        cy.get('[data-cy="email-value"]').should('exist', 'string')
+        cy.get('[data-cy="email-value"]').should('exist', 'string') 
       
   });
 });

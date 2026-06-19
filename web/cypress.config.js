@@ -7,8 +7,6 @@ e2e: {
     },
     experimentalStudio: true,
     video: true,
-    baseUrl: 'http://localhost:3000',
-    viewportWidth: 1440,
-    viewportHeight: 900,
+    baseUrl: 'http://localhost:3000'
   }
 })
